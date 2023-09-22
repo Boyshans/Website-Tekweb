@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Halaman Web Penghitungan</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perhitungan Fibonacci dan Volume</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Tentang Kami</h2>
+            <p>Ini adalah halaman web perhitungan Fibonacci dan volume bangun ruang.</p>
+        </section>
+
+        <!-- Tabel input untuk deret Fibonacci -->
+        <section>
+            <h2>Deret Fibonacci</h2>
+            <p>Masukkan jumlah angka dalam deret:</p>
+            <table>
+                <tr>
+                    <td><label for="fibonacciCount">Jumlah Angka:</label></td>
+                    <td><input type="number" id="fibonacciCount" class="center-input" placeholder="Masukkan jumlah angka"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="calculateFibonacci">Hitung</button></td>
+                </tr>
+            </table>
+            <div id="fibonacciResult"></div>
+        </section>
+
+        <!-- Tabel input untuk menghitung volume bangun ruang -->
+        <section>
+            <h2>Menghitung Volume Bangun Ruang</h2>
+            <p>Pilih bangun ruang:</p>
+            <select id="shapeSelect">
+                <option value="kubus">Kubus</option>
+                <option value="balok">Balok</option>
+            </select>
+
+            <!-- Tabel input untuk kubus -->
+            <table id="kubusInput" style="display: none;">
+                <tr>
+                    <td><label for="inputVariable1">Sisi:</label></td>
+                    <td><input type="number" id="inputVariable1" class="center-input" placeholder="Masukkan sisi"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="calculateVolumeKubus">Hitung Volume</button></td>
+                </tr>
+            </table>
+
+            <!-- Tabel input untuk balok -->
+            <table id="balokInput" style="display: none;">
+                <tr>
+                    <td><label for="inputVariable2">Panjang:</label></td>
+                    <td><input type="number" id="inputVariable2" class="center-input" placeholder="Masukkan panjang"></td>
+                </tr>
+                <tr>
+                    <td><label for="inputVariable3">Lebar:</label></td>
+                    <td><input type="number" id="inputVariable3" class="center-input" placeholder="Masukkan lebar"></td>
+                </tr>
+                <tr>
+                    <td><label for="inputVariable4">Tinggi:</label></td>
+                    <td><input type="number" id="inputVariable4" class="center-input" placeholder="Masukkan tinggi"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="calculateVolumeBalok">Hitung Volume</button></td>
+                </tr>
+            </table>
+            <div id="hasilPerhitungan"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; I Gde Made Hanura</p>
+    </footer>
+
+    <!--file JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

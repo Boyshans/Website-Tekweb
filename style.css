@@ -1,0 +1,109 @@
+
+* {
+    margin: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Gaya header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Gaya tautan di navigasi */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Gaya konten utama */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya footer */
+footer {
+    background-color: #d50303;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Gaya judul dalam section */
+section h2 {
+    background-color: #c52222;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Gaya tabel input */
+table {
+    width: 200%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr td {
+    padding: 8px;
+}
+
+button {
+    background-color: #a40d0d;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Gaya tombol saat dihover */
+button:hover {
+    background-color: #555;
+}
+
+
+/* Gaya hasil perhitungan */
+#hasilPerhitungan {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    color: #a40d0d;
+}
+
+
+
+
